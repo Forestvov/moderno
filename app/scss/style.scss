@@ -50,7 +50,7 @@
     }
     a{
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         color: #fff;
     }
 }
@@ -71,12 +71,12 @@
 }
 .search__inner-title {
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     margin-bottom: 18px;
     line-height: 72px;
 }
 .search__inner-text {
-    font-weight: 500;
+    @include f500;
     font-size: 20px;
     margin-bottom: 50px;
     line-height: 30px;
@@ -93,12 +93,12 @@
         box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
         border: none;
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         padding-left: 25px;
         padding-right: 60px;
         &::placeholder{
             color: #90a4ae;
-            font-weight: 500;
+            @include f500;
         }
     }
     button{
@@ -125,7 +125,7 @@
     text-align: center;
     margin-bottom: 60px; 
     button{
-        font-weight: 500;
+        @include f500;
         color: $bg;
         font-size: 14px;
         padding: 12px 21px;
@@ -159,7 +159,7 @@
         justify-content: space-between;
         padding: 10px 30px;
         min-height: 90px;
-        font-weight: 500;
+        @include f500;
         align-items: center;
         border-bottom: 1px solid #e7ecf2;
     }
@@ -177,7 +177,7 @@
         display: block;
     }
     &-price{
-        font-weight: 700;
+        @include f700;
         font-size: 20px;
         color: $bg;
     }
@@ -203,7 +203,7 @@
             margin-right: 14px;
         }
         span{
-            font-weight: 500;
+            @include f500;
             font-size: 14px;
         }
     }
@@ -282,13 +282,78 @@
     }
     &-title{
         font-size: 24px;
-        font-weight: 700;
+        @include f700;
         color: $bg;
         background-color: #f8f8f8;
         text-align: center;
         padding: 30px 10px;
     }
 }
-
 // end tutorial
+// start adventages
+.adventages{
+    background-color: $bg;
+    padding: 110px 0;
+    &__title{
+        color: #fff;
+        margin-bottom: 85px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        text-align: center;
+        padding: 0 15px;
+        .icon-1{
+            width: 50px;
+            height: 70px;
+        }
+          
+        .icon-2{
+            width: 71px;
+            height: 73px;
+        }
+        .icon-3{
+            width: 76px;
+            height: 86px;
+        }
+        &:hover{
+            .adventages__item-images{
+                background-color: $green;
+                svg{
+                    
+                }
+            }
+            .adventages__item-title{
+                color: $green;
+            }
+        }
+        &-images{
+            width: 114px;
+            height: 114px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            transition: all .5s;
+        }
+        &-title{
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: #fff;
+            transition: all .5s;
+            @include f500;
+        }
+        &-text{
+            color: #b0bec5;
+        }
+    }
+}
+
+// end adventages
+
 @import 'media'

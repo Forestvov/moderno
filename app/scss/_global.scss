@@ -42,7 +42,7 @@ body{
     text-align: center;
     margin-bottom: 30px;
     color: $bg;
-    font-weight: 700;
+    @include f700;
     font-size: 36px;
     line-height: 60px;
 }
