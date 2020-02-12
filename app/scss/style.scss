@@ -123,7 +123,7 @@
 }
 .products__inner-btn{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 60px; 
     button{
         font-weight: 500;
         color: $bg;
@@ -191,6 +191,7 @@
     &-author{
         display: flex;
         align-items: center;
+        max-width: 245px;
         .avatar{
             width: 30px;
             height: 30px;
@@ -204,6 +205,12 @@
         span{
             font-weight: 500;
             font-size: 14px;
+        }
+    }
+    &-start{
+        span{
+            color: $bg;
+            font-size: 12px;
         }
     }
 }
@@ -224,15 +231,64 @@
         }
     }
 }
-
-
-
-
 // end products
+// start product-slider
+.product-slider {
+    padding: 110px 0 120px;
+    .slick-dots{
+        text-align: center;
+        margin-top: 50px;
+        li{
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 3px;  
+            button{
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                border: none;
+                font-size: 0;
+                height: 16px;
+                width: 16px;
+                outline: none;
+            }
+            &.slick-active{
+                button{
+                    background-color: $green;   
+                }
+            }
+        }
+    }
+}
+// end product-slider
+// start tutorial
+.tutorial{
+    padding: 70px 0 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+.tutorial__item{
+    &-images{
+        min-height: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &-title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $bg;
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 30px 10px;
+    }
+}
 
-
-
-
-
-
+// end tutorial
 @import 'media'
