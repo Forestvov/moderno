@@ -4,9 +4,7 @@
 @import 'global';
 
 // start header
-.header{
-    background-color: #fff;
-}
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -102,12 +100,17 @@
     display: flex;
     align-items: center;
 }
+.header__btn-menu,
+.menu__btn {
+    display: none;
+}
 .notification{
     span{
     background-color: $yellow;
     }
 }
 .basket{
+    margin-right: 20px;
     span{
         background-color: $green;
     }
@@ -118,7 +121,6 @@
     }
 }
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -195,6 +197,7 @@
     top: 62px;
     right: 0;
     height: 0;
+    z-index: 1;
     overflow: hidden;
     transition: all .3s;
 }
