@@ -306,7 +306,105 @@
 }
 .icons-color::before{
     color: $tomato;
+
 }
+// start model
+#model{
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding: 90px 0 100px;
+}
+.login__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    @include f700;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.login-wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+        label{
+            position: relative;
+            display: block;
+            width: 100%;
+            &::before{
+                position: absolute;
+                font-family: 'icomoon';
+                font-size: 14px;
+                color: #fff;
+                top: 9px;
+                left: 18px;
+            }
+        }
+        .login__label-name::before {
+            content: "\f007";
+        }
+        .login__label-password::before {
+            content: "\f023";
+        }
+        input{
+            height: 43px;
+            margin-bottom: 8px;
+            display: block;
+            border: none;
+            font-size: 14px;
+            padding-left: 40px;
+            padding-right: 20px;
+            width: 100%;
+            color: #fff;
+            background-color: #76ae36;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        button{
+            margin-top: 19px;
+            padding: 18px 0 16px;
+            background-color: #fff;
+            width: 140px;
+            text-transform: uppercase;
+            border: none;
+            margin-right: 10px;
+            @include f700;
+            cursor: pointer;
+            color: #000;
+            box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+            text-align: center;
+        }
+    }
+}
+.lost-pass{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.new-acc{
+    margin-top: 19px;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+    padding: 15px 0 15px 28px;
+    text-align: center;
+    max-width: 245px;
+    background-color: #76ae36;
+    &::before{
+        content: "\f044";
+        left: 35px;
+        font-family: 'icomoon';
+        top: 15px;  
+        position: absolute;
+    }
+}
+.fancybox-button svg path{
+    color: #fff;
+}
+// end model
 // end header
 // start search
 .search{
