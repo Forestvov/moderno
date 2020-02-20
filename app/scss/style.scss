@@ -1560,12 +1560,14 @@ button.icon-unsorted{
 .page-404{
     margin-bottom: 155px;
 }
-.page-404__wrapper{
+.page-404__wrapper,
+.about__wrapper{
     background-color: #fff;
     border: 1px solid #dcdcdc;
     margin-bottom: 15px;
 }
-.page-404__head{
+.page-404__head,
+.about__head{
     font-size: 24px;
     color: #444;
     @include f500;
@@ -1616,4 +1618,24 @@ button.icon-unsorted{
     margin-bottom: 100px;
 }
 //end page 404
+//start about
+.about{
+    margin-bottom: 145px;
+}
+.about__inner{
+    padding: 0 50px;
+}
+.about__box{
+    h3{
+        font-size: 20px;
+        @include f700;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        color: #444;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+}
+//end about
 @import 'media'
