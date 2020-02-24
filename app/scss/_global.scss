@@ -1,0 +1,120 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html,
+body {
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: #f4f6f5;
+}
+ul,
+li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: $text;
+}
+body{
+    font-family: 'Roboto-Regular' , sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: $text;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0 15px;
+    }
+}
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    color: $bg;
+    @include f700;
+    font-size: 36px;
+    line-height: 60px;
+}
+.rate-star{
+    display: inline-block;
+    margin-right: 13px;
+}
+.page-content{
+    background-color: $gray;
+}
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0 40px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            & + li{
+                padding-left: 24px;
+                &::before{
+                    position: absolute;
+                    content: '-';
+                    left: 8px;
+                    color: $green;
+                }
+            }
+            &:last-child{
+                a,
+                span{
+                    color: $bg;
+                }
+            }
+        }
+        a{
+            color: #b0bec5;
+        }
+    }
+}
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        position: absolute;
+        content: "\f105";
+        font-family: 'icomoon';
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
+}
+#model{
+    display: none;
+}
