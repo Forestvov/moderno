@@ -75,6 +75,8 @@ body{
 .breadcrumbs{
     &__inner{
         padding: 45px 0 40px;
+        width: 1200px;
+        overflow: hidden;
     }
     &__list{
         li{
@@ -112,4 +114,7 @@ body{
         color: $green;
         font-size: 14px;
     }
+}
+#model{
+    display: none;
 }
